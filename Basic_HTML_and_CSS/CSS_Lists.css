@@ -1,0 +1,12 @@
+ol {
+	list-style: upper-roman;
+}
+
+ul {
+	list-style: square;
+}
+
+h2 {
+	color: black;
+	text-shadow: 0 0 3px #ff0000;
+}
