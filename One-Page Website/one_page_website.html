@@ -3,13 +3,14 @@
 	<head>
 	    <title>Hotel Rabbit</title>
 	    <meta charset="utf-8">
+		<link rel="stylesheet" href="./CSS/one_page_website.css">
 	</head>
 	<body>
 		
 		<!-- NAV -->
-		<div>
-			<div>	
-				<ul>
+		<div class="wrap">
+			<div class="menu-container">	
+				<ul class="menu">
 					<a href="#home" id="link"><li>HOME</li></a>
 					<a href="#gallery"><li>GALLERY</li></a>
 					<a href="#video"><li>VIDEO</li></a>
@@ -43,7 +44,7 @@
 				<!-- PHOTO CONTAINER 1 -->
 				<div class="photo container">
 					<div class="photo">
-						<img src="./images/thumb/thumbnail_1.png" alt="Veterinarian">
+						<img src="./images/thumb/thumbnail_1.png" alt="Veterinarian" width="800" height="400">
 						<div class="photo-overlay">
 							<h3 class="white-head">Click to Enlarge</h3>
 							<p>Spacious outdoor enclosures.</p>
@@ -91,7 +92,7 @@
 				<!-- PHOTO CONTAINER 5 -->
 				<div class="photo container">
 					<div class="photo">
-						<img src="./images/thumb/thumbnail_5.png" alt="Rabbits socializing">
+						<img src="./images/thumb/thumbnail_5.png" alt="Rabbits socializing" width="600" height="300">
 						<div class="photo-overlay">
 							<h3 class="white-head">Click to Enlarge</h3>
 							<p>Socialization and enrichment.</p>
@@ -115,7 +116,7 @@
 				<!-- PHOTO CONTAINER 7 -->
 				<div class="photo container">
 					<div class="photo">
-						<img src="./images/thumb/thumbnail_7.png" alt="Rabbit herb garden">
+						<img src="./images/thumb/thumbnail_7.png" alt="Rabbit herb garden" width="600" height="300">
 						<div class="photo-overlay">
 							<h3 class="white-head">Click to Enlarge</h3>
 							<p>Seasonal herb garden for open grazing.</p>
@@ -151,7 +152,7 @@
 				<!-- PHOTO CONTAINER 10 -->
 				<div class="photo container">
 					<div class="photo">
-						<img src="./images/thumb/thumbnail_10.png" alt="Grooming services">
+						<img src="./images/thumb/thumbnail_10.png" alt="Grooming services" width="600" height="300">
 						<div class="photo-overlay">
 							<h3 class="white-head">Click to Enlarge</h3>
 							<p>Grooming services offered.</p>
@@ -175,7 +176,7 @@
 				<!-- PHOTO CONTAINER 12 -->
 				<div class="photo container">
 					<div class="photo">
-						<img src="./images/thumb/thumbnail_12.png" alt="Grazing rabbit">
+						<img src="./images/thumb/thumbnail_12.png" alt="Grazing rabbit" width="600" height="300">
 						<div class="photo-overlay">
 							<h3 class="white-head">Click to Enlarge</h3>
 							<p>Free-range grazing.</p>
@@ -191,27 +192,27 @@
 		<!-- RSVP -->
 		<section>
 			<div id="contact">
-				<div>
-					<h1>Reservations</h1>
-				<div>
-					<h2><span>They're Home away from Home</span>
-						<br />Book an overnight stay for your pet!
+				<div class="container">
+					<div class="heading-padding">
+					<h1 class="heading-padding">Reservations</h1>
+				<div class="reservation">
+					<h2><span>They're Home away from Home.</span>
+						<br/>Book an overnight stay for your pet!
 					</h2>
-					<p>
+					<p class="rsvp-text">
 						We'll reach out to you! Just provide us with your basic contact information.
 					</p>
-					<div>
+					<div class="form-rsvp">
 						<form action="" method="post">
-							<input class "rsvp" type="text" value="Animal Type">
+							<input class="rsvp" type="text" value="Animal Type">
 							<input class="rsvp" type="text" value="First Name">
 							<input class="rsvp" type="text" value="Last Name">
 							<input class="rsvp" type="text" value="Email Address">
 							<input class="rsvp" type="text" value="Phone Number">
-					
 							<div class="form=spacer">
 								<label class="terms">Terms and Conditions</label>
 							</div>
-							<div>
+							<div class="submit">
 								<input type="submit" value="Submit">
 							</div>
 						</form>
