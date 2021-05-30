@@ -73,6 +73,7 @@ h1 {
     max-width: 1200px;
   }
   
+ 
   /* The Close Button */
   .close {
     color: white;
@@ -142,6 +143,11 @@ h1 {
     color: white;
   }
   
+  img {
+    width: 100%;
+    height: 250px;
+    max-width: 350px;
+  }
   img.demo {
     opacity: 0.6;
   }
