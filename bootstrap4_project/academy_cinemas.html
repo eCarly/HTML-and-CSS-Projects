@@ -86,7 +86,7 @@
             <div class="card-body">
               <h5 class="card-title">Beauty and the Beast</h5>
               <p class="card-text"> A regular farm girl finds herself in the most strangest of circumstances.
-                After becoming lost, she becomes a captive forced to interact with a 
+                After becoming lost, she becomes a captive forced to interact with an 
                  unjust and unruly being, but then soon finds herself becoming interested in the possibility more.
                 </p><br>
               <span class="badge badge-pill badge-info">12:00pm</span>
@@ -143,16 +143,120 @@
           </div>
         </div>
 
+         <!--END SHOWTIMES -->
+         <!--Collapse menu for upcoming movies-->
+         <h2>Remastered Classic Movies: Coming soon!</h2>
+         <div id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="card">
+            <div class="card-header" role="tab" id="headingOne">
+              <h5 class="mb-0">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                 "Where the Red Fern Grows"
+                </a>
+              </h5>
+            </div>
+        
+            <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+              <div class="card-block">
+                Come and experience the remastered version of the heartwarming story of a young boy and his two hunting hounds. 
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" role="tab" id="headingTwo">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  "Old Yeller"
+                </a>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="card-block">
+                Enjoy the remastered classic tale of the loyal Old Yeller.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" role="tab" id="headingThree">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  "101 Dalmations"
+                </a>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div class="card-block">
+                Experience the newly remastered live-action 101 Dalmations on the big screen.
+              </div>
+            </div>
+          </div>
+        </div>
 
-         <!--SHOWTIMES -->
-         
+
+         <!-- /Collapse menu for upcoming movies-->
+        <!-- Jumbotron heading START-->
+        <div class="jumbotron jumbotron-fluid bg-info mt-5 text-center">
+            <div class="container">
+              <h1 class="display-4 hidden-sm-down" style="color:#fff;font-family:roboto;font-weight:900;text-transform:uppercase;">
+                Movie Deals</h1>
+                <p class="lead">Check out our monthly deals...</p>
+                <!--movie deals-->
+                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#register">See our monthly movie deals!</button>
+                <!--movie deals-->
+            </div>
+        </div>
+
+      <!-- Jumbotron heading END-->
+         <!--Sign-up form START-->
+         <!-- form modal-->
+         <div class="modal fade" id="register">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Register to receive movie deals...</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+              
+              <form>
+                  <fieldset class="form-group">
+                    <label for="firstname">First Name:</label>
+                    <input type="text" class="form-control" id="firstname" placeholder="First Name...">
+                  </fieldset>
+                  <fieldset class="form-group">
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" class="form-control" id="lastname" placeholder="Last Name...">
+                  </fieldset>
+                  <fieldset class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="text" class="form-control" id="email" placeholder="Email...">
+                  </fieldset>
+                  <fieldset class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="text" class="form-control" id="password" placeholder="Password...">
+                  </fieldset>
+              </form>
+              
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+         <!-- /form modal-->
           <div class="text-center">
                 <form id="deals">
                     <h1 class="text-primary my-5">Sign up for Movie Club Rewards!</h1>
                     <div class="form-group">
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
-                     <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="button" class="btn btn-secondary btn-info popover-dismiss" data-container="body" data-toggle="popover" data-placement="right" data-content="Submit email to receive awesome movie reward deals!">
+                      Submit
+                    </button>
                  </form>
             </div>
 
@@ -173,14 +277,22 @@
                 </ul>
             </div>
 
-        
+        <!--Sign-up form END-->
     </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  
+    <script>
+      $('.popover-dismiss').popover({
+      trigger: 'focus'
+      })
+
+    </script>
+  
   </body>
 </html>
 
