@@ -7,6 +7,15 @@
 		<script src="JS/one_page_website.js"></script>
 	</head>
 	<body>
+	<script>
+		document.body.classList.add('fade-out');
+
+		window.addEventListener('DOMContentLoaded', () => {
+			document.body.classList.remove('fade-out');
+
+		});
+	</script>
+	
 		
 		<!-- NAV -->
 		<div class="wrap">
@@ -24,9 +33,9 @@
 		<div id="home">
 			<div>
 				<div>
-					<h1>Hotel Rabbit</h1>
-					<p>Short or extended overnight care for small animals.</p>
-					<ul>
+					<h1 style="font-size:6vw;">Hotel Rabbit</h1>
+					<p style="font-size:2vw;">Short or extended overnight care for small animals.</p>
+					<ul style="font-size: 2vw;">
 						<li>Rabbits</li>
 						<li>Guinea Pigs</li>
 						<li>Ferrets</li>
@@ -39,7 +48,7 @@
 		<!-- GALLERY -->
 		<section>
 			<div id="gallery">
-				<h1>Gallery</h1> 
+				<h1 style="font-size: 3vw;">Gallery</h1> 
 			<div>
 				
 				<!-- PHOTO CONTAINER 1 -->
@@ -361,12 +370,12 @@
 			<div id="contact">
 				<div class="container">
 					<div class="heading-padding">
-					<h1 class="heading-padding">Reservations</h1>
+					<h1 style="font-size:3vw;"class="heading-padding">Reservations</h1>
 				<div class="reservation">
-					<h2><span>They're Home away from Home.</span>
+					<h2 style="font-size: 2vw;"><span>They're Home away from Home.</span>
 						<br/>Book an overnight stay for your pet!
 					</h2>
-					<p class="rsvp-text">
+					<p style="font-size: 1vw;" class="rsvp-text">
 						We'll reach out to you! Just provide us with your basic contact information.
 					</p>
 					<div class="form-rsvp">
@@ -377,7 +386,7 @@
 							<input class="rsvp" type="text" value="Email Address">
 							<input class="rsvp" type="text" value="Phone Number">
 							<div class="form=spacer">
-								<label class="terms">Terms and Conditions</label>
+								<label style="font-size: 1vw;" class="terms">Terms and Conditions</label>
 							</div>
 							<div class="submit">
 								<input type="submit" value="Submit">
@@ -389,7 +398,23 @@
 		</div>
 	</section>
 	<!-- END RSVP -->
-	
+	<!--Popup login form START-->
+	<div class="form-popup" id="myForm">
+		<form action="/action_page.php" class="form-container">
+		<h1>Login</h1>
+
+		<label for="email"><b>Email</b></label>
+		<input type="text" placeholder="Enter Email" name="email" required>
+
+		<label for="psw"><b>Password</b></label>
+		<input type="password" placeholder="Enter Password" name="psw" required>
+
+		<button type="submit" class="btn">Login</button>
+		<button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+		</form>
+	</div>
+
+	<!--Popup login form END-->
 	<!-- VIDEO -->
 	<div id="video">
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/fkILLt4sS0M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
