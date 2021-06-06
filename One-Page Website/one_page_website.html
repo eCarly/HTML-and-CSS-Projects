@@ -9,14 +9,8 @@
 	<body>
 	<script>
 		document.body.classList.add('fade-out');
-
-		window.addEventListener('DOMContentLoaded', () => {
-			document.body.classList.remove('fade-out');
-
-		});
 	</script>
 	
-		
 		<!-- NAV -->
 		<div class="wrap">
 			<div class="menu-container">	
@@ -424,7 +418,11 @@
 		www.HotelRabbit.com &nbsp;|&nbsp; &copy; 2021
 	</div>
 	<!-- END FOOTER -->
-					
-					
-	</body>
+	<script>		
+	window.addEventListener('DOMContentLoaded', () => {
+		document.body.classList.remove('fade-out');
+
+	});	
+</script>				
+</body>
 </html>
